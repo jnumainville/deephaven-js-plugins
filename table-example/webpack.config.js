@@ -44,16 +44,8 @@ module.exports = {
     ],
   },
   devtool: 'source-map',
-  plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-    }),
-  ],
   externals: {
     react: 'react',
-    reactstrap: 'reactstrap',
   },
   performance: {
     hints: false,
